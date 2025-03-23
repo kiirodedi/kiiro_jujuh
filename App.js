@@ -3,109 +3,70 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Image } from 'expo-image';
 import { ScrollView } from 'react-native';
 
-
 export default function App() {
   return (
     <ScrollView>
     <View style={estilos.container}>
-      {/* <Image 
-        source={{uri: 'https://img.elo7.com.br/product/685x685/39D9819/2-adesivo-bart-simpson-adesivo-bart-bart-de-lado-adesivos-motos.jpg'}}   
-        style={estilos.logo}
-      />
-
-      <View style={estilos.cardImage}>
-        <Image
-          source={ImgHomer}
-          style={estilos.logo} 
+      <View style={estilos.cardContato}>
+        <Image style={estilos.cardContatoPerfil}
+          source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7XDFd_IXokZHcVfMo2nq0t-H1N8p3ktEg8Q&s'}}
         />
-      </View> */}
-      <View style={estilos.BP_f}>
-      <View style={estilos.titulo}>
-        <Text style={estilos.titulo}>Bate-papo</Text>
+        <Text style={estilos.cardContatoNome}>Miau Padeiro</Text>
       </View>
+
+
+      <View style={estilos.remetente}>
+        <Text style={estilos.balaoR}>Opa miau!</Text>
+        <Image style={estilos.fotoPerfil}
+        source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSvJ7oyGcMRMbMtkr3uAVtTmtw4vBVpTOyQg&s'}}
+        />
       </View>
-      <View style={estilos.balao1}>
-        <View style={estilos.auau}>
-          <View style={estilos.direita}>
-            <Text style={estilos.letra}>opa mingau!!</Text>
-            <Image
-            source={{uri: 'https://i.pinimg.com/originals/59/4d/bb/594dbb3996994f7759abce039b68ff88.jpg'}}
-            style={estilos.fotoPerfilDog}
-            />
-          </View>
-        </View>
+
+      <View style={estilos.destinatario}>
+        <Image style={estilos.fotoPerfil}
+          source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7XDFd_IXokZHcVfMo2nq0t-H1N8p3ktEg8Q&s'}}
+        />
+        <Text style={estilos.balaoD}>Eai doguinho, oq manda??</Text>
       </View>
-      <View style={estilos.balao2}>
-        <View style={estilos.miau}>
-          <View style={estilos.esquerda}>
-            <Text style={estilos.letra}>eai doguinho! Oq manda?</Text>
-            <Image
-            source={{uri: 'https://thumbs.dreamstime.com/b/padeiro-do-gato-com-os-nacos-de-p%C3%A3o-122531815.jpg'}}
-            style={estilos.fotoPerfilGato}
-            />
-          </View>
-        </View>
+
+      <View style={estilos.remetente}>
+        <Text style={estilos.balaoR}>Vc está livre hj?? Tava querendo sair um pouco...</Text>
+        <Image style={estilos.fotoPerfil}
+        source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSvJ7oyGcMRMbMtkr3uAVtTmtw4vBVpTOyQg&s'}}
+        />
       </View>
-      <View style={estilos.balao1}>
-        <View style={estilos.auau}>
-          <View style={estilos.direita}>
-            <Text style={estilos.letra}>vai estar ocupapdo hj, amigão?? Queria sair um pouco...</Text>
-            <Image
-            source={{uri: 'https://i.pinimg.com/originals/59/4d/bb/594dbb3996994f7759abce039b68ff88.jpg'}}
-            style={estilos.fotoPerfilDog}
-            />
-        </View>
+
+      <View style={estilos.destinatario}>
+        <Image style={estilos.fotoPerfil}
+          source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7XDFd_IXokZHcVfMo2nq0t-H1N8p3ktEg8Q&s'}}
+        />
+        <Text style={estilos.balaoD}>Putz amigão, hj estou trabalhando na minha padaria :(</Text>
       </View>
-        </View>
-        <View style={estilos.balao2}>
-          <View style={estilos.miau}>
-            <View style={estilos.esquerda}>
-              <Text style={estilos.letra}>putz, hj estou trabalhando na minha padaria :/</Text>
-              <Image
-              source={{uri: 'https://thumbs.dreamstime.com/b/padeiro-do-gato-com-os-nacos-de-p%C3%A3o-122531815.jpg'}}
-              style={estilos.fotoPerfilGato}
-              />
-            </View>
-          </View>
-        </View>
-        <View style={estilos.balao1}>
-          <View style={estilos.auau}>
-            <View style={estilos.direita}>
-              <Text style={estilos.letra}>aaah, q pena :(</Text>
-              <Image
-              source={{uri: 'https://i.pinimg.com/originals/59/4d/bb/594dbb3996994f7759abce039b68ff88.jpg'}}
-              style={estilos.fotoPerfilDog}
-              />
-            </View>
-          </View>
-        </View>
-        <View style={estilos.balao1}>
-          <View style={estilos.auau}>
-            <View style={estilos.direita}>
-              <Text style={estilos.letra}>mas bom trabalho pra vc ent! Sucesso pra sua padaria :D</Text>
-              <Image
-              ource={{uri: 'https://i.pinimg.com/originals/59/4d/bb/594dbb3996994f7759abce039b68ff88.jpg'}}
-              style={estilos.fotoPerfilDog}
-              />
-            </View>
-          </View>
-        </View>
-        <View style={estilos.balao2}>
-          <View style={estilos.miau}>
-            <View style={estilos.esquerda}>
-              <Text style={estilos.letra}>obg pela compreensão, amigão </Text>
-              <Image
-              source={{uri: 'https://thumbs.dreamstime.com/b/padeiro-do-gato-com-os-nacos-de-p%C3%A3o-122531815.jpg'}}
-              style={estilos.fotoPerfilGato}
-              />
-            </View>
-          </View>
-        </View>
-        <View style={estilos.caixaTxtFundo}>
-          <View style={estilos.caixaTxtFrente}>
-            <Text>Escreva uma mensagem...</Text>
-          </View>
-        </View>
+
+      <View style={estilos.remetente}>
+        <Text style={estilos.balaoR}>Aah, q pena pra mim :(</Text>
+        <Image style={estilos.fotoPerfil}
+        source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSvJ7oyGcMRMbMtkr3uAVtTmtw4vBVpTOyQg&s'}}
+        />
+      </View>
+      <View style={estilos.remetente}>
+        <Text style={estilos.balaoR}>Mas blz ent, outro dia a gente sai. Todo sucesso do mundo pra vc, amiguinho!</Text>
+        <Image style={estilos.fotoPerfil}
+        source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSvJ7oyGcMRMbMtkr3uAVtTmtw4vBVpTOyQg&s'}}
+        />
+      </View>
+
+      <View style={estilos.destinatario}>
+        <Image style={estilos.fotoPerfil}
+          source={{uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7XDFd_IXokZHcVfMo2nq0t-H1N8p3ktEg8Q&s'}}
+        />
+        <Text style={estilos.balaoD}>Obg pela compreensão, amigão!</Text>
+      </View>
+
+
+      <View style={estilos.caixaTexto}>
+        <Text style={estilos.digiteAqui}>Digite aqui...</Text>
+      </View>
       <StatusBar style="auto" />
     </View>
     </ScrollView>
@@ -115,95 +76,82 @@ export default function App() {
 const estilos = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000f2f',
+    backgroundColor: '#1f1a34',
     alignItems: 'center',
     paddingTop: 20
   },
 
-  BP_f:{
+  cardContato:{
+    backgroundColor: '#311e5e',
+    height: 70,
     width: '100%',
   },
-
-  titulo:{
-    backgroundColor: '#3b568c',
-    fontSize: 30,
-    marginTop: 10,
-    marginBottom: 10,
-    alignContent: 'center',
-    fontWeight: '500',
+  cardContatoPerfil:{
+    height: 60,
+    width: 60,
+    borderRadius: '100%',
+    marginLeft: 15,
+    marginTop: 7,
+  },
+  cardContatoNome:{
+    fontSize: 25,
+    fontWeight: '100',
     color: '#fff',
-    display: 'flex',
-    alignItems: 'center'
+    textAlign: 'center',
+    marginVertical: -48,
   },
+  
 
-  balao1:{
-    position: 'relative',
-    left: 80,
-    display: 'inline-block'
+  remetente:{
+    flexDirection: 'row',
+    marginBottom: 10,
+    marginLeft: 10,
+    marginTop: 10
   },
-  balao2:{
-    position: 'relative',
-    right: 80
+  destinatario:{
+    flexDirection: 'row',
+    marginBottom: 10,
+    marginLeft: 10,
+    marginTop: 10,
   },
-
-  auau:{
-    backgroundColor: '#001f60',
-    margin: 10,
-    padding: 10,
-    width: 300,
-    borderStyle: 'solid',
-    borderWidth: 1,
-    borderColor: '#001f60',
-    borderRadius: '5%',
-    borderBottomRightRadius: '30%',
-    alignItems: 'center',
-    justifyContent:'center',
-  },
-
-  miau:{
-    backgroundColor: '#3b568c',
-    margin: 10,
-    padding: 10,
-    width: 200,
-    borderStyle: 'solid',
-    borderWidth: 1,
-    borderColor: '#3b568c',
-    borderRadius: '5%',
-    borderBottomLeftRadius: '30%',
-    alignItems: 'center',
-    justifyContent:'center'
-  },
-
-  gato:{
-    width: 10,
-    height: 10
-  },
-
-  fotoPerfilDog:{
-    width: 50,
+  fotoPerfil:{
     height: 50,
-    borderRadius: '100%',
-  },
-
-  fotoPerfilGato:{
     width: 50,
-    height: 50,
     borderRadius: '100%',
+    marginRight: 10,
+    marginLeft: 10,
+  },
+  balaoR:{
+    backgroundColor: '#311e5e',
+    color: '#fff',
+    padding: 10,
+    fontSize: 18,
+    borderRadius: 30
+  },
+  balaoD:{
+    backgroundColor: '#593ca1',
+    color: '#fff',  
+    padding: 10,
+    fontSize: 18,
+    borderRadius: 30
   },
 
-  letra:{
+  caixaTexto:{
+    backgroundColor: '#311e5e',
+    height: 70,
+    width: '100%',
+  },
+  digiteAqui:{
+    backgroundColor: '#593ca1',
+    color: '#a69ec6',
     fontSize: 20,
-    fontWeight: '500',
-    color: '#fff'
-  },
-
-  caixaTxtFundo:{
-    backgroundColor: '#3b568c',
-    width: 350,
-    padding: 15,
-    margin: 10,
-    borderRadius: '20%',
-  },
+    textAlign: 'center',
+    width: 280,
+    height: 40,
+    top: 15,
+    borderRadius: 30,
+    left: '13%'
+  }
   // logo:{
   //   backgroundColor: '#8a8a8a',
   //   width: 150, 
